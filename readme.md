@@ -6,7 +6,7 @@ Project Details
 -----
 This project assumes the UCI HAR Dataset is downloaded and extracted, and run_analysis.r is placed in it's root directory ("./UCI HAR Dataset/run_analysis.r")
 
-By running "run_analysis.r" in the proper directory, you are creating: "./UCI HAR Dataset/tidy.csv", a dataset made from "cleaned_raw", containing the average of each variable in it for each activity and each subject
+By running "run_analysis.r" in the proper directory, you are creating: "./UCI HAR Dataset/tidy.txt", a dataset made from "tidy", containing the average of each variable in it for each activity and each subject
 
 Also included in this package is a file "codebook.md", which contains a description of the "tidy.csv".
 
@@ -25,4 +25,4 @@ The script follows the following procedure:
 8. Use "activity_labels.txt" to replace Activity column with a descriptive character vector (1 -> WALKING, 2 -> WALKING_UPSTAIRS, etc...)
 9. Use grep to drop columns not relating to mean, std, Activity, or Subject
 10. Use aggregate to create a new dataset called "tidy" that is the mean of each variable in cleaned_data for each Activity for each Subject
-11. Write out "tidy.csv" using write.csv
+11. Write out "tidy.txt" using write.table

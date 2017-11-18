@@ -54,5 +54,5 @@ colnames(tidy)[1] <- "Activity"
 colnames(tidy)[2] <- "Subject"
 
 ## Write out tidy dataset to "tidy.csv"
-write.csv(tidy, file = "./tidy.csv", row.names = FALSE)
+write.table(tidy, file = "./tidy.txt", row.names = FALSE)
 
